@@ -6,7 +6,7 @@ public static class ResourceUtils
 {
     private const string ResourcePath = "src/resources/appsettings.json";
 
-    public static Dictionary<string, string> AppSettings { get; private set; }
+    public static Dictionary<string, string>? AppSettings { get; private set; }
 
     public static void LoadResource()
     {
@@ -15,15 +15,15 @@ public static class ResourceUtils
             .AddJsonFile(ResourcePath)
             .Build();
 
-        AppSettings = config.Get<Dictionary<string, string>>() ?? throw new InvalidOperationException();
+        AppSettings = config.Get<Dictionary<string, string>>();
     }
 
     public static string GetSourceDir()
     {
         var projectDirectory = Directory.GetCurrentDirectory();
-        while (!File.Exists(Path.Combine(projectDirectory, "TestingApi.csproj")))
-            projectDirectory = Directory.GetParent(projectDirectory).FullName;
+        while (projectDirectory != null && !File.Exists(Path.Combine(projectDirectory, "TestingApi.csproj")))
+            projectDirectory = Directory.GetParent(projectDirectory)?.FullName;
 
-        return projectDirectory;
+        return projectDirectory ?? throw new InvalidOperationException();
     }
 }
