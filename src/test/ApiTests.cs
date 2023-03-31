@@ -1,5 +1,6 @@
 using System.Net;
-using TestingApi.dto;
+using TestingApi.main.sharp;
+using TestingApi.main.sharp.model;
 using Xunit;
 
 namespace TestingApi.test;

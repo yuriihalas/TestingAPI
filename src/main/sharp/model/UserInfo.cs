@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace TestingApi.dto;
+namespace TestingApi.main.sharp.model;
 
 public class UserInfo
 {

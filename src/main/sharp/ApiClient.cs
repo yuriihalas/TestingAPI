@@ -1,6 +1,6 @@
-using TestingApi.dto;
+using TestingApi.main.sharp.model;
 
-namespace TestingApi;
+namespace TestingApi.main.sharp;
 
 public class ApiClient : IDisposable
 {
