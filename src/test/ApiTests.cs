@@ -22,7 +22,7 @@ public class ApiTests : BaseTest
     [Fact]
     public async void GetUserInfoTest()
     {
-        var expectedId = 332;
+        var expectedId = 2;
         var responseMessage = await ApiClient.GetUserAsync(expectedId);
 
         var actualUserInfo = await JsonUtils.GetModel<UserInfo>(responseMessage);

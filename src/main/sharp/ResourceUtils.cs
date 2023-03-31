@@ -4,7 +4,7 @@ namespace TestingApi;
 
 public static class ResourceUtils
 {
-    private const string ResourcePath = "src/resources/appsettings.json";
+    private const string ResourcePath = "src/main/resources/appsettings.json";
 
     public static Dictionary<string, string>? AppSettings { get; private set; }
 
