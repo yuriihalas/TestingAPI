@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace TestingApi.main.sharp;
+namespace TestingApi.Main.Sharp;
 
 public static class JsonUtils
 {

@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace TestingApi.main.sharp;
+namespace TestingApi.Main.Sharp;
 
 public static class DateUtils
 {

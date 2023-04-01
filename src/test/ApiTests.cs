@@ -1,9 +1,9 @@
 using System.Net;
-using TestingApi.main.sharp;
-using TestingApi.main.sharp.model;
+using TestingApi.Main.Sharp;
+using TestingApi.Main.Sharp.Model;
 using Xunit;
 
-namespace TestingApi.test;
+namespace TestingApi.Test;
 
 public class ApiTests : BaseTest
 {

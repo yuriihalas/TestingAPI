@@ -1,8 +1,8 @@
 using log4net;
 using log4net.Config;
-using TestingApi.main.sharp;
+using TestingApi.Main.Sharp;
 
-namespace TestingApi.test;
+namespace TestingApi.Test;
 
 public class BaseTest : IDisposable
 {

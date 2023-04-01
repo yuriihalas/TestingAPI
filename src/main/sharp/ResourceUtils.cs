@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace TestingApi.main.sharp;
+namespace TestingApi.Main.Sharp;
 
 public static class ResourceUtils
 {

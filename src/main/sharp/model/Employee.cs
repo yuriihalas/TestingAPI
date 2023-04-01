@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace TestingApi.main.sharp.model;
+namespace TestingApi.Main.Sharp.Model;
 
 public class Employee
 {
